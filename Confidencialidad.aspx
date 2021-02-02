@@ -16,7 +16,7 @@
   <H2 ><center>CARTA COMPROMISO DE CONFIDENCIALIDAD, RESERVA Y RESGUARDO DE INFORMACIÓN Y DATOS</center></H2>
     <div id="layer1">
 
-<FORM ACTION="Confidencialidad2.aspx" METHOD="GET" id="mi_formulario">
+<FORM ACTION="Confidencialidad2.aspx" METHOD="POST" id="mi_formulario">
 
 <p> <strong>A QUIEN CORRESPONDA</strong></p> 
 <p>P r e s e n t e:</p><br /><br />
