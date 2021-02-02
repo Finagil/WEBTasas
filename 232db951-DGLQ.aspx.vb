@@ -42,6 +42,9 @@ Partial Public Class DGSucursalLQForm
         Dim Analista As String = DetailsView1.Rows(13).Cells(1).Text.Trim
         Dim ta As New ProDSTableAdapters.SolLiqTableAdapter
         ta.UpdateEstatus("APROBADO", Request("User"), True, Date.Now, Encriptar(Request("User") & Date.Now.ToString), Request("ID"))
+        If TextComentarioAUT.Text.Length > 0 Then
+            ta.UpdateComentariosDG(TextComentarioAUT.Text, Request("ID"))
+        End If
         Globales.AltaLineaCreditoLIQUIDEZ1(Cliente, Monto, "Autorizado por " & Request("User"), Request("User"), Request("ID"))
         GeneraCorreoAUT(Monto, Cliente, Nombre, Analista)
         Response.Redirect("~\232db951-DGLQ.aspx?User=" & Request("User") & "&ID=0")
@@ -86,7 +89,7 @@ Partial Public Class DGSucursalLQForm
         Mensaje += "Solicitud: " & Request("ID") & "<br>"
         Mensaje += "Cliente: " & nombre & "<br>"
         Mensaje += "Monto Financiado: " & Monto.ToString("n2") & "<br>"
-        Mensaje += "Comentarios DG: " & TextComentario.Text & "<br>"
+        Mensaje += "Comentarios DG: " & TextComentarioCorreo.Text & "<br>"
 
         MandaCorreo(Request("User") & "@Fiangil.com.mx", "ecacerest@finagil.com.mx", Asunto, Mensaje)
         MandaCorreo(Request("User") & "@Fiangil.com.mx", ta.ScalarCorreo(Analista), Asunto, Mensaje)
@@ -103,7 +106,7 @@ Partial Public Class DGSucursalLQForm
         Mensaje += "Solicitud: " & Request("ID") & "<br>"
         Mensaje += "Cliente: " & nombre & "<br>"
         Mensaje += "Monto Financiado: " & Monto.ToString("n2") & "<br>"
-        Mensaje += "Comentarios DG: " & TextComentario.Text & "<br>"
+        Mensaje += "Comentarios DG: " & TextComentarioCorreo.Text & "<br>"
 
         MandaCorreo(Request("User") & "@Finagil.com.mx", "ecacerest@finagil.com.mx", Asunto, Mensaje)
         MandaCorreo(Request("User") & "@Finagil.com.mx", ta.ScalarCorreo(Analista), Asunto, Mensaje)

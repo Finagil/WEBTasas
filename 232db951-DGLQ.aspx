@@ -83,19 +83,23 @@
         </asp:ObjectDataSource>
     
         <asp:Panel ID="Panel1" runat="server" Height="100%" Width="100%">
-            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Names="Arial" Text="Comentarios"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Names="Arial" Text="Comentarios por correo"></asp:Label>
             <br />
-            <asp:TextBox ID="TextComentario" runat="server" Height="66px" TextMode="MultiLine" Width="317px"></asp:TextBox>
-            <br />
-            <br />
-            <cc1:BotonEnviar ID="BotonEnviar2" runat="server" Font-Bold="True" Font-Size="Smaller" Text="Rechazar" TextoEnviando="Rechazando..." Width="122px" />
+            <asp:TextBox ID="TextComentarioCorreo" runat="server" Height="66px" TextMode="MultiLine" Width="317px"></asp:TextBox>
             <br />
             <br />
             <cc1:BotonEnviar ID="BotonEnviar3" runat="server" Font-Bold="True" Font-Size="Smaller" Text="Enviar Comentario" TextoEnviando="Regresando..." Width="122px" />
             <br />
             <br />
-            <cc1:BotonEnviar ID="BotonEnviar1" runat="server" Font-Bold="True" Text="Autorizar"
-                TextoEnviando="Autorizando..." Width="122px" Font-Size="Smaller" /><br />
+            <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Names="Arial" Text="Comentario para Autorización"></asp:Label>
+            <br />
+            <asp:TextBox ID="TextComentarioAUT" runat="server" Height="66px" MaxLength="500" TextMode="MultiLine" Width="317px"></asp:TextBox>
+            <br />
+            <br />
+            <cc1:BotonEnviar ID="BotonEnviar2" runat="server" Font-Bold="True" Font-Size="Smaller" Text="Rechazar" TextoEnviando="Rechazando..." Width="122px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <cc1:BotonEnviar ID="BotonEnviar1" runat="server" Font-Bold="True" Font-Size="Smaller" Text="Autorizar" TextoEnviando="Autorizando..." Width="122px" />
+            <br />
             <br />
         </asp:Panel>
         <br />

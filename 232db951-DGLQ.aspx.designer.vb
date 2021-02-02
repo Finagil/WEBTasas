@@ -77,22 +77,13 @@ Partial Public Class DGSucursalLQForm
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control TextComentario.
+    '''Control TextComentarioCorreo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextComentario As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control BotonEnviar2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents BotonEnviar2 As Global.RoderoLib.BotonEnviar
+    Protected WithEvents TextComentarioCorreo As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control BotonEnviar3.
@@ -102,6 +93,33 @@ Partial Public Class DGSucursalLQForm
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents BotonEnviar3 As Global.RoderoLib.BotonEnviar
+    
+    '''<summary>
+    '''Control Label3.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control TextComentarioAUT.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TextComentarioAUT As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control BotonEnviar2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BotonEnviar2 As Global.RoderoLib.BotonEnviar
     
     '''<summary>
     '''Control BotonEnviar1.
