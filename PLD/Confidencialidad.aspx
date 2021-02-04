@@ -43,13 +43,14 @@
         Dim ip
         Dim Host
         Dim user
-
+        Dim MachineName1
+        MachineName1 = Environment.MachineName
         ip = request.ServerVariables("REMOTE_ADDR")
-        Host = request.ServerVariables("REMOTE_HOST")
-        User = request.ServerVariables("REMOTE_USER")
+        Host = Request.ServerVariables("REMOTE_HOST")
+        user = request.ServerVariables("REMOTE_USER")
 %>
     <div align="CENTER"> 
-        <input type="hidden" id="equipo" name="equipo" value="<%Response.Write(Request.ServerVariables("REMOTE_HOST")) %>"><BR>
+        <input type="hidden" id="equipo" name="equipo" value="<%Response.Write(Environment.MachineName) %>"><BR>
   
     <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2" style="text-align: center">ACEPTO LOS TERMINOS Y CONDICIONES</label>
    </div>
