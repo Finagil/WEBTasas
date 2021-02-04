@@ -10,7 +10,7 @@
 <body >
     <div style="text-align:center;">
 		  <div style="width:75%; margin: 0 auto; text-align:left;">
- <div align="right" >   <img src="IMG/logo-sin-fondo_web.png" width="200" height="100"></div>
+ <div align="right" >   <img src="https://Finagil.com.mx/WebTasas/IMG/logo-sin-fondo_web.png" width="200" height="100"></div>
     
 
   <H2 ><center>CARTA COMPROMISO DE CONFIDENCIALIDAD, RESERVA Y RESGUARDO DE INFORMACIÓN Y DATOS</center></H2>

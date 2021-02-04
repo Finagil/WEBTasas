@@ -110,6 +110,9 @@
     <Content Include="552db804-scod.aspx" />
     <Content Include="552db804-70f8.aspx" />
     <Content Include="951sb999-7xx8.aspx" />
+    <Content Include="PLD\close.html" />
+    <Content Include="PLD\Confidencialidad.aspx" />
+    <Content Include="PLD\Confidencialidad2.aspx" />
     <Content Include="ConsultaEFOS.aspx" />
     <Content Include="contact-form.aspx" />
     <Content Include="CreditoFinagil.html" />
@@ -118,6 +121,7 @@
     <Content Include="Deyel\Reestructuras.aspx" />
     <Content Include="IMG\logo-sin-fondo_web.png" />
     <Content Include="IMG\logoArfin.JPG" />
+    <Content Include="PLD\VerPdf.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +258,27 @@
       <DependentUpon>951sb999-7xx8.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="PLD\Confidencialidad.aspx.designer.vb">
+      <DependentUpon>Confidencialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PLD\Confidencialidad.aspx.vb">
+      <DependentUpon>Confidencialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PLD\Confidencialidad2.aspx.designer.vb">
+      <DependentUpon>Confidencialidad2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PLD\Confidencialidad2.aspx.vb">
+      <DependentUpon>Confidencialidad2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PLD\Confidencialidad_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Confidencialidad_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="ConsultaEFOS.aspx.designer.vb">
       <DependentUpon>ConsultaEFOS.aspx</DependentUpon>
     </Compile>
@@ -328,6 +353,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PLD\VerPdf.aspx.designer.vb">
+      <DependentUpon>VerPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PLD\VerPdf.aspx.vb">
+      <DependentUpon>VerPdf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ProDS.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -366,6 +398,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PLD\Confidencialidad_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Confidencialidad_rpt.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

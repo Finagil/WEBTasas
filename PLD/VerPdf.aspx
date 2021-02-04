@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="verPdf.aspx.vb" Inherits="WEBTasas.verPdf" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="VerPdf.aspx.vb" Inherits="WEBTasas.VerPdf" %>
 
 <!DOCTYPE html>
 
@@ -9,9 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <div>
+        </div>
     </form>
 </body>
 </html>
+
