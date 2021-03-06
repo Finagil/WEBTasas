@@ -133,8 +133,13 @@ Partial Public Class CPXForm
         Archivo = "CXP\" & CInt(r.idEmpresa).ToString & "-" & CInt(r.Solicitud).ToString & ".pdf"
         Dim Firma2 As String = Encriptar(r.FechaSol.ToString("yyyyMMddhhmm") & r.MailSolicitante & Session("ID1") & "-" & Session("ID2"))
 
-        ta.Ok1(Firma, Session("ID1"), Session("ID2"), Session("User"))
-        ta.OK2(Firma, Session("ID1"), Session("ID2"), Session("User"))
+        If r.idConcepto <> 144 Then '144, (HONORARIOS PERSONAS MORALES - ARFIN).
+            ta.Ok1(Firma, Session("ID1"), Session("ID2"), Session("User"))
+            ta.OK2(Firma, Session("ID1"), Session("ID2"), Session("User"))
+        Else
+            ta.Ok3(Firma, "AUTOMATICO", Session("ID1"), Session("ID2"), Session("User"))
+        End If
+
         LbError.Text = "Pagos Autorizados"
         Panel1.Visible = False
         LbError.Visible = True
